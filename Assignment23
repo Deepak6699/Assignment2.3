@@ -1,0 +1,36 @@
+package acadgild;
+import java.util.Scanner;
+
+public class Assign23 {
+	
+	public static void main(String[] args) {
+		
+		highest hd = new highest();
+		hd.result();
+	}
+}
+	class highest{
+	public void result(){
+		int fn,sn,tn;
+	System.out.println("Enter 3 numbers:");
+	Scanner sc= new Scanner(System.in);
+	fn = sc.nextInt();
+	sn = sc.nextInt();
+	tn = sc.nextInt();
+	if(fn>sn){
+	     if(fn>tn){
+			System.out.println(""+fn);
+		}
+		else{
+			System.out.println(""+tn);
+		}
+	}
+		else if(sn>tn){
+			System.out.println(""+sn);
+		}
+		else{
+			System.out.println(""+tn);
+		}	
+	sc.close();
+	}
+	}
